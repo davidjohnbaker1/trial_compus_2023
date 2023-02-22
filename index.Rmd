@@ -8,6 +8,12 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+
+library(tidyverse)
+
+iris |> 
+  ggplot(aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point()
 ```
 
 Column {data-width=650}
