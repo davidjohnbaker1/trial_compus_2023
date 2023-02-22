@@ -7,13 +7,6 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-library(flexdashboard)
-
-library(tidyverse)
-
-iris |> 
-  ggplot(aes(x = Petal.Length, y = Petal.Width)) +
-  geom_point()
 ```
 
 Column {data-width=650}
@@ -31,7 +24,12 @@ Column {data-width=350}
 ### Chart B
 
 ```{r}
+library(flexdashboard)
+library(tidyverse)
 
+iris |> 
+  ggplot(aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point()
 ```
 
 ### Chart C
